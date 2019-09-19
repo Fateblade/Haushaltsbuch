@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Registrations", "Registrations", "{92E0971C-33E4-4963-AF37-539E64818A7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logic", "Logic", "{5DDA63A4-1F0D-44BE-BAEE-8F0BBF1DFDCB}"
+	ProjectSection(SolutionItems) = preProject
+		Classifiation.md = Classifiation.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStoring.Contract", "DataStoring.Contract\DataStoring.Contract.csproj", "{6E092BBD-C35B-406C-B54D-3D4B43A3F1B7}"
 EndProject
@@ -53,7 +56,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoCo.Core.EventBrokerage", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoCo.Core.PrismAdapter", "CoCo.Core.PrismAdapter\CoCo.Core.PrismAdapter.csproj", "{F91CB43A-4251-4068-81B2-4E21C16E652F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haushaltsbuch.MigrationConsole", "Haushaltsbuch.MigrationConsole\Haushaltsbuch.MigrationConsole.csproj", "{E1598701-C906-4985-BBF9-6A710E6A3306}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haushaltsbuch.MigrationConsole", "Haushaltsbuch.MigrationConsole\Haushaltsbuch.MigrationConsole.csproj", "{E1598701-C906-4985-BBF9-6A710E6A3306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{F2D69540-DD38-433C-A1DE-DE8453386A0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6D7C29BB-449B-43C4-9971-12C3D98D3715}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{519E7077-73E1-466B-9A9F-25756EE4B19D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{1C591FD6-094A-4441-AF8A-8149C37E9B4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +178,10 @@ Global
 		{802BB7AD-4ADB-4F63-B197-EEBE22747E1B} = {8492E420-7133-4A3E-9EEE-2D3881F1C6E5}
 		{F91CB43A-4251-4068-81B2-4E21C16E652F} = {8492E420-7133-4A3E-9EEE-2D3881F1C6E5}
 		{E1598701-C906-4985-BBF9-6A710E6A3306} = {E9F36254-11EE-4D45-A6FA-583372A1D809}
+		{F2D69540-DD38-433C-A1DE-DE8453386A0F} = {5DDA63A4-1F0D-44BE-BAEE-8F0BBF1DFDCB}
+		{6D7C29BB-449B-43C4-9971-12C3D98D3715} = {5DDA63A4-1F0D-44BE-BAEE-8F0BBF1DFDCB}
+		{519E7077-73E1-466B-9A9F-25756EE4B19D} = {5DDA63A4-1F0D-44BE-BAEE-8F0BBF1DFDCB}
+		{1C591FD6-094A-4441-AF8A-8149C37E9B4A} = {5DDA63A4-1F0D-44BE-BAEE-8F0BBF1DFDCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55E01D1C-6A66-4A63-81C4-8E4685AFBE97}
