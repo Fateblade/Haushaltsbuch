@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fateblade.Haushaltsbuch.Logic.SourceManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\DataClasses\DataClasses.csproj" />
+    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
+    <ProjectReference Include="..\SourceManagement.Contract\SourceManagement.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

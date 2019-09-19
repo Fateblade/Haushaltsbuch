@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>CrossCutting.EventBrokerage.Contract</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DataClasses\" />
+    <Folder Include="Callbacks\" />
+  </ItemGroup>
+
+</Project>

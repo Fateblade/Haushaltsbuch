@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.110" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Haushaltsbuch.Models\Haushaltsbuch.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ACI.Base">
+      <HintPath>..\..\..\ACI_Engine\ACI.Base\bin\Release\netstandard2.0\ACI.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="ACI.Base.DB.SQLite">
+      <HintPath>..\..\..\ACI_Engine\ACI.DB.SQLite\bin\Release\netstandard2.0\ACI.Base.DB.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

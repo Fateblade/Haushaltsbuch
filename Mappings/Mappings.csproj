@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Infrastructure.Mappings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="7.2.0.1367" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Bootstrapping\CoCo.Core.Bootstrapping.csproj" />
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Configuration\CoCo.Core.Configuration.csproj" />
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.EventBrokerage\CoCo.Core.EventBrokerage.csproj" />
+    <ProjectReference Include="..\CoCo.Core.PrismAdapter\CoCo.Core.PrismAdapter.csproj" />
+    <ProjectReference Include="..\DataClasses\DataClasses.csproj" />
+    <ProjectReference Include="..\DataManagement\EntryManagement.Contract.csproj" />
+    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
+    <ProjectReference Include="..\DataStoring.Sql\DataStoring.SqLite.csproj" />
+    <ProjectReference Include="..\EntryManagement\EntryManagement.csproj" />
+    <ProjectReference Include="..\ItemManagement.Contract\ItemManagement.Contract.csproj" />
+    <ProjectReference Include="..\ItemManagement\ItemManagement.csproj" />
+    <ProjectReference Include="..\SourceManagement.Contract\SourceManagement.Contract.csproj" />
+    <ProjectReference Include="..\SourceManagement\SourceManagement.csproj" />
+  </ItemGroup>
+
+</Project>
