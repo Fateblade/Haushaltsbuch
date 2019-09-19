@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
+    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
+    <ProjectReference Include="..\ItemHistoryManagement.Contract\ItemHistoryManagement.Contract.csproj" />
+    <ProjectReference Include="..\ItemManagement\ItemManagement.csproj" />
+  </ItemGroup>
+
+</Project>

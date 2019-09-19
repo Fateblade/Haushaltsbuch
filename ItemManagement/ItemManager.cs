@@ -31,6 +31,11 @@ namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
             _ItemRepository.Delete(id);
         }
 
+        public Item Get(int id)
+        {
+            return _ItemRepository.Query.First(t => t.Id == id);
+        }
+
         public IQueryable<Item> GetItems()
         {
             return _ItemRepository.Query;

@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

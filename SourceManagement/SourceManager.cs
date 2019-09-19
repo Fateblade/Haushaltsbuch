@@ -31,6 +31,11 @@ namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
             _SourceRepository.Delete(id);
         }
 
+        public Source Get(int id)
+        {
+            return _SourceRepository.Query.First(t => t.Id == id);
+        }
+
         public IQueryable<Source> GetSources()
         {
             return _SourceRepository.Query;

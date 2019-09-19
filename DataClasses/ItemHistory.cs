@@ -9,7 +9,6 @@ namespace Fateblade.Haushaltsbuch.CrossCutting.DataClasses
     {
         //properties
         public int Id { get; set; }
-        public DateTime LastBuyDate { get; set; }
         public DateTime DateOfChange { get; set; }
 
         //DupeID-0001: Item

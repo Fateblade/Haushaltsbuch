@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
     <ProjectReference Include="..\DataClasses\DataClasses.csproj" />
   </ItemGroup>
 

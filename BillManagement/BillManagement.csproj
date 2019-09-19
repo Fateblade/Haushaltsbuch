@@ -2,17 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Callbacks\" />
-    <Folder Include="DataClasses\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\CoCo2.0\CoCo.Core.Contract\CoCo.Core.Contract.csproj" />
-    <ProjectReference Include="..\DataClasses\DataClasses.csproj" />
+    <ProjectReference Include="..\BillManagement.Contract\BillManagement.Contract.csproj" />
+    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
   </ItemGroup>
 
 </Project>
