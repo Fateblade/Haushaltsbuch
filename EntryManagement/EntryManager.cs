@@ -1,9 +1,7 @@
-﻿using System;
-using System.Linq;
-using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
 using Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract;
-using Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract.Exceptions;
+using System.Linq;
 
 namespace Fateblade.Haushaltsbuch.Logic.EntryManagement
 {
@@ -25,26 +23,12 @@ namespace Fateblade.Haushaltsbuch.Logic.EntryManagement
         //public methods
         public void Add(Entry entry)
         {
-            try
-            {
-                _Repository.Add(entry);
-            }
-            catch (Exception ex)
-            {
-                throw new CantAddEntryException($"Eintrag konnte nicht hinzugefügt werden", ex);
-            }
+            _Repository.Add(entry);
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                _Repository.Delete(id);
-            }
-            catch (Exception ex)
-            {
-                throw new CantDeleteEntryException($"Eintrag konnte nicht gelöscht werden", ex);
-            }
+            _Repository.Delete(id);
         }
 
         public IQueryable<Entry> GetEntries()
@@ -54,14 +38,7 @@ namespace Fateblade.Haushaltsbuch.Logic.EntryManagement
 
         public void Update(Entry entry)
         {
-            try
-            {
-                _Repository.Update(entry);
-            }
-            catch (Exception ex)
-            {
-                throw new CantUpdateEntryException($"Eintrag konnte nicht aktualisiert werden", ex);
-            }
+            _Repository.Update(entry);
         }
     }
 }

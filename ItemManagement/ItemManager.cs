@@ -1,9 +1,7 @@
-﻿using System;
-using System.Linq;
-using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
 using Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract;
-using Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract.Exceptions;
+using System.Linq;
 
 namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
 {
@@ -25,26 +23,12 @@ namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
         //public methods
         public void Add(Item item)
         {
-            try
-            {
-                _ItemRepository.Add(item);
-            }
-            catch(Exception ex)
-            {
-                throw new CantAddItemException("Gegenstand konnte nicht hinzugefügt werden", ex);
-            }
+            _ItemRepository.Add(item);
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                _ItemRepository.Delete(id);
-            }
-            catch (Exception ex)
-            {
-                throw new CantDeleteItemException("Gegenstand konnte nicht gelöscht werden", ex);
-            }
+            _ItemRepository.Delete(id);
         }
 
         public IQueryable<Item> GetItems()
@@ -54,14 +38,7 @@ namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
 
         public void Update(Item item)
         {
-            try
-            {
-                _ItemRepository.Update(item);
-            }
-            catch (Exception ex)
-            {
-                throw new CantUpdateItemException("Gegenstand konnte nicht aktualisiert werden", ex);
-            }
+            _ItemRepository.Update(item);
         }
     }
 }

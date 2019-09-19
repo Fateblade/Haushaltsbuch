@@ -1,9 +1,7 @@
-﻿using System;
-using System.Linq;
-using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
 using Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract;
-using Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract.Exceptions;
+using System.Linq;
 
 namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
 {
@@ -25,26 +23,12 @@ namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
         //public methods
         public void Add(Source source)
         {
-            try
-            {
-                _SourceRepository.Add(source);
-            }
-            catch (Exception ex)
-            {
-                throw new CantAddSourceException("Quelle konnte nicht hinzugefügt werden", ex);
-            }
+            _SourceRepository.Add(source);
         }
 
         public void Delete(int id)
         {
-            try
-            {
-                _SourceRepository.Delete(id);
-            }
-            catch (Exception ex)
-            {
-                throw new CantDeleteSourceException("Quelle konnte nicht gelöscht werden", ex);
-            }
+            _SourceRepository.Delete(id);
         }
 
         public IQueryable<Source> GetSources()
@@ -54,14 +38,7 @@ namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
 
         public void Update(Source source)
         {
-            try
-            {
-                _SourceRepository.Update(source);
-            }
-            catch (Exception ex)
-            {
-                throw new CantUpdateSourceException("Quelle konnte nicht aktualisiert werden", ex);
-            }
+            _SourceRepository.Update(source);
         }
     }
 }
