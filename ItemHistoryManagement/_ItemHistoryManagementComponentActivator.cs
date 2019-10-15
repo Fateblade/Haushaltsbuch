@@ -2,10 +2,10 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Haushaltsbuch.Logic.ItemManagement;
+using Fateblade.Haushaltsbuch.Logic.Domain.ItemManagement;
 using Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract;
 
-namespace ItemHistoryManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement
 {
     public class ItemHistoryManagementComponentActivator : IComponentActivator
     {

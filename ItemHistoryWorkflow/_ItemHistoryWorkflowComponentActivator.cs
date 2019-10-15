@@ -4,7 +4,7 @@ using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Dependency
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract.Callbacks;
 
-namespace ItemHistoryWorkflow
+namespace Fateblade.Haushaltsbuch.Logic.Business.ItemHistoryWorkflow
 {
     public class ItemHistoryWorkflowComponentActivator : IComponentActivator
     {

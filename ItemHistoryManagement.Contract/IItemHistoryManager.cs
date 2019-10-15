@@ -1,9 +1,9 @@
-﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
+﻿using System.Linq;
+using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
 using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
-using ItemHistoryManagement.Contract.Exceptions;
-using System.Linq;
+using Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement.Contract.Exceptions;
 
-namespace ItemHistoryManagement.Contract
+namespace Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement.Contract
 {
     [MapException(typeof(ItemHistoryManagementException), "Unbekannter Fehler beim Zugriff auf die Gegenstandshistorie")]
     public interface IItemHistoryManager

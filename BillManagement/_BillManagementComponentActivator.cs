@@ -1,10 +1,10 @@
-﻿using BillManagement.Contract;
-using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
+﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Bootstrapping;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
+using Fateblade.Haushaltsbuch.Logic.Domain.BillManagement.Contract;
 
-namespace BillManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.BillManagement
 {
     public class BillManagementComponentActivator : IComponentActivator
     {

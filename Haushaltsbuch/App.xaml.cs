@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Windows;
-using Infrastructure.Mappings;
+using Fateblade.Haushaltsbuch.Registrations.Mappings;
+using Fateblade.Haushaltsbuch.UI.Haushaltsbuch.Dialogs.CommonDialogs;
+using Fateblade.Haushaltsbuch.UI.Haushaltsbuch.Dialogs.DomainDialogs;
 using Prism.Ioc;
 using Prism.Ninject;
 
-namespace UI.Haushaltsbuch
+namespace Fateblade.Haushaltsbuch.UI.Haushaltsbuch
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -17,12 +19,14 @@ namespace UI.Haushaltsbuch
 
         protected override Window CreateShell()
         {
-            return new Shell();
+            return new MainShell();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             new KernelInitializer().Initialize(containerRegistry, Container);
+            containerRegistry.RegisterInstance(typeof(CommonDialogRequestHandler), Container.Resolve<CommonDialogRequestHandler>());
+            containerRegistry.RegisterInstance(typeof(DomainDialogRequestHandler), Container.Resolve<DomainDialogRequestHandler>());
         }
 
 
@@ -37,12 +41,9 @@ namespace UI.Haushaltsbuch
                     Type viewModelType = Type.GetType(viewModelTypeName);
                     return viewModelType;
                 }
-                );
+            );
         }
     }
-}
 
-namespace Haushaltsbuch 
-{
-    //Shell.g.cs will not compile without this. something went wrong in the refactoring to UI.Haushaltsbuch
+//Shell.g.cs will not compile without this. something went wrong in the refactoring to UI.Haushaltsbuch
 }

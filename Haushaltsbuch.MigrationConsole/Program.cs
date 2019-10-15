@@ -1,8 +1,8 @@
-﻿using Fateblade.Haushaltsbuch.Data.DataStoring.SqLite;
-using System;
+﻿using System;
 using System.IO;
+using Fateblade.Haushaltsbuch.Data.DataStoring.SqLite;
 
-namespace Haushaltsbuch.MigrationConsole
+namespace Fateblade.Haushaltsbuch.UI.Haushaltsbuch.MigrationConsole
 {
     class Program
     {

@@ -2,9 +2,9 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract;
+using Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract;
 
-namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement
 {
     public class SourceManagementComponentActivator : IComponentActivator
     {

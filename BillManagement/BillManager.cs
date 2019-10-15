@@ -1,9 +1,9 @@
-﻿using BillManagement.Contract;
+﻿using System.Linq;
 using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
-using System.Linq;
+using Fateblade.Haushaltsbuch.Logic.Domain.BillManagement.Contract;
 
-namespace BillManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.BillManagement
 {
     public class BillManager : IBillManager
     {

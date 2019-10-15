@@ -1,15 +1,15 @@
-﻿using BillManagement;
-using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection.DataClasses;
+﻿using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection.DataClasses;
 using Fateblade.Haushaltsbuch.CrossCutting.CoCo.Core.PrismAdapter;
 using Fateblade.Haushaltsbuch.Data.DataStoring.SqLite;
-using Fateblade.Haushaltsbuch.Logic.EntryManagement;
-using Fateblade.Haushaltsbuch.Logic.ItemManagement;
-using Fateblade.Haushaltsbuch.Logic.SourceManagement;
-using ItemHistoryManagement;
-using ItemHistoryWorkflow;
+using Fateblade.Haushaltsbuch.Logic.Business.ItemHistoryWorkflow;
+using Fateblade.Haushaltsbuch.Logic.Domain.BillManagement;
+using Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement;
+using Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement;
+using Fateblade.Haushaltsbuch.Logic.Domain.ItemManagement;
+using Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement;
 using Prism.Ioc;
 
-namespace Infrastructure.Mappings
+namespace Fateblade.Haushaltsbuch.Registrations.Mappings
 {
     public class KernelInitializer
     {

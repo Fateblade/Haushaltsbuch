@@ -1,9 +1,9 @@
-﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using System;
+using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract.Callbacks;
-using ItemHistoryManagement.Contract; 
-using System;
+using Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement.Contract;
 
-namespace ItemHistoryWorkflow
+namespace Fateblade.Haushaltsbuch.Logic.Business.ItemHistoryWorkflow
 {
     // ToDo: maybe move message infos out of DataStoring into the different Management Contracts?
 

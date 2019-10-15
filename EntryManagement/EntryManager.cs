@@ -1,9 +1,9 @@
-﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using System.Linq;
+using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
-using Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract;
-using System.Linq;
+using Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement.Contract;
 
-namespace Fateblade.Haushaltsbuch.Logic.EntryManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement
 {
     public class EntryManager : IEntryManager
     {

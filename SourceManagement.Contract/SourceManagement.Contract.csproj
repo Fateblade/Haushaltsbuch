@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract</RootNamespace>
+    <RootNamespace>Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

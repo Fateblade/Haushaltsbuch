@@ -2,9 +2,9 @@
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Configuration;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.DependencyInjection;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
-using Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract;
+using Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement.Contract;
 
-namespace Fateblade.Haushaltsbuch.Logic.EntryManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement
 {
     public class EntryManagementComponentActivator : IComponentActivator
     {

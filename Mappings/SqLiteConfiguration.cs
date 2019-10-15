@@ -1,8 +1,8 @@
-﻿using Fateblade.Haushaltsbuch.Data.DataStoring.SqLite;
-using System;
+﻿using System;
 using System.IO;
+using Fateblade.Haushaltsbuch.Data.DataStoring.SqLite;
 
-namespace Infrastructure.Mappings
+namespace Fateblade.Haushaltsbuch.Registrations.Mappings
 {
     class SqLiteFileConfiguration : ISqlLiteConnectionProvider
     {

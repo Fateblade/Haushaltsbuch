@@ -1,9 +1,9 @@
-﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using System.Linq;
+using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
 using Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract;
-using System.Linq;
 
-namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.ItemManagement
 {
     public class ItemManager : IItemManager
     {

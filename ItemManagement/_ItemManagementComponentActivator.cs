@@ -4,7 +4,7 @@ using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Dependency
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.EventBrokerage;
 using Fateblade.Haushaltsbuch.Logic.ItemManagement.Contract;
 
-namespace Fateblade.Haushaltsbuch.Logic.ItemManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.ItemManagement
 {
     public class ItemManagementComponentActivator : IComponentActivator
     {

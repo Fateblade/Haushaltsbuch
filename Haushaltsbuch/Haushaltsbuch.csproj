@@ -4,14 +4,11 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
-    <RootNamespace>UI.Haushaltsbuch</RootNamespace>
+    <RootNamespace>Fateblade.Haushaltsbuch.UI.Haushaltsbuch</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Shell.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.0.8" />
     <PackageReference Include="MahApps.Metro" Version="1.6.5" />
     <PackageReference Include="Prism.Ninject" Version="7.2.0.1347-pre" />
   </ItemGroup>
@@ -29,16 +26,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BusinessLogic\" />
+    <Folder Include="Controls\" />
     <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BillManagement.Contract\BillManagement.Contract.csproj" />
     <ProjectReference Include="..\DataClasses\DataClasses.csproj" />
     <ProjectReference Include="..\DataManagement\EntryManagement.Contract.csproj" />
-    <ProjectReference Include="..\DataStoring.Contract\DataStoring.Contract.csproj" />
+    <ProjectReference Include="..\ItemHistoryManagement.Contract\ItemHistoryManagement.Contract.csproj" />
     <ProjectReference Include="..\ItemManagement.Contract\ItemManagement.Contract.csproj" />
     <ProjectReference Include="..\Mappings\Mappings.csproj" />
+    <ProjectReference Include="..\OrchestratableDialogs.CommonUserInputDialogs.Contract\OrchestratableDialogs.CommonUserInputDialogs.Contract.csproj" />
+    <ProjectReference Include="..\OrchestratableDialogs.Contract\OrchestratableDialogs.Contract.csproj" />
+    <ProjectReference Include="..\OrchestratableDialogs.DomainUserInputDialogs.Contract\OrchestratableDialogs.DomainUserInputDialogs.Contract.csproj" />
+    <ProjectReference Include="..\Orchestration.Contract\Orchestration.Contract.csproj" />
     <ProjectReference Include="..\SourceManagement.Contract\SourceManagement.Contract.csproj" />
   </ItemGroup>
 

@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
 using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
-using Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract.Exceptions;
+using Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement.Contract.Exceptions;
 
-namespace Fateblade.Haushaltsbuch.Logic.EntryManagement.Contract
+namespace Fateblade.Haushaltsbuch.Logic.Domain.EntryManagement.Contract
 {
     [MapException(typeof(EntryManagementException), "Unbekannter Fehler beim Zugriff auf Einträge")]
     public interface IEntryManager

@@ -1,9 +1,9 @@
-﻿using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
+﻿using System.Linq;
+using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
 using Fateblade.Haushaltsbuch.Data.DataStoring.Contract;
-using Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract;
-using System.Linq;
+using Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract;
 
-namespace Fateblade.Haushaltsbuch.Logic.SourceManagement
+namespace Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement
 {
     public class SourceManager : ISourceManager
     {

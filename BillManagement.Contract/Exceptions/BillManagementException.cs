@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BillManagement.Contract.Exceptions
+namespace Fateblade.Haushaltsbuch.Logic.Domain.BillManagement.Contract.Exceptions
 {
     [Serializable]
     public class BillManagementException : Exception

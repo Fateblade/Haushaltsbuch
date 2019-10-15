@@ -1,9 +1,9 @@
-﻿using BillManagement.Contract.Exceptions;
+﻿using System.Linq;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
 using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
-using System.Linq;
+using Fateblade.Haushaltsbuch.Logic.Domain.BillManagement.Contract.Exceptions;
 
-namespace BillManagement.Contract
+namespace Fateblade.Haushaltsbuch.Logic.Domain.BillManagement.Contract
 {
     [MapException(typeof(BillManagementException), "Unbekannter Fehler beim Zugriff auf die Rechnungen")]
     public interface IBillManager

@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using DavidTielke.PersonManagementApp.CrossCutting.CoCo.Core.Contract.Aspects;
 using Fateblade.Haushaltsbuch.CrossCutting.DataClasses;
-using Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract.Exceptions;
+using Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract.Exceptions;
 
-namespace Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract
+namespace Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract
 {
     [MapException(typeof(SourceManagementException),"Unbekannter Fehler beim Zugriff auf die Quellen")]
     public interface ISourceManager

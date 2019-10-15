@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fateblade.Haushaltsbuch.Logic.SourceManagement.Contract.Exceptions
+namespace Fateblade.Haushaltsbuch.Logic.Domain.SourceManagement.Contract.Exceptions
 {
 
     [Serializable]

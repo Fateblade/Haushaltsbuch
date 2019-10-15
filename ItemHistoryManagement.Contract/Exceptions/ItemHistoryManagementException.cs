@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ItemHistoryManagement.Contract.Exceptions
+namespace Fateblade.Haushaltsbuch.Logic.Domain.ItemHistoryManagement.Contract.Exceptions
 {
     [Serializable]
     public class ItemHistoryManagementException : Exception

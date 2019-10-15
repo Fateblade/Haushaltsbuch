@@ -1,4 +1,4 @@
-﻿<prism:PrismApplication x:Class="UI.Haushaltsbuch.App"
+﻿<prism:PrismApplication x:Class="Fateblade.Haushaltsbuch.UI.Haushaltsbuch.App"
                         xmlns:prism="http://prismlibrary.com/"
                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
