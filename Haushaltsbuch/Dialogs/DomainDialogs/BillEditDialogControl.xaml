@@ -90,12 +90,10 @@
 
             <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,8,0,0" Orientation="Horizontal"
                         HorizontalAlignment="Right" >
-                <Button Content="Save"
-                        Command="{Binding Path=SaveCommand}"/>
-                <Button Content="Save and create new" 
-                        Command="{Binding Path=SaveCurrentAndCreateNextBillToFillCommand}" />
-                <Button Content="Save and close" 
-                        Command="{Binding Path=SaveAndCloseCommand}" />
+                <Button Content="Save and close"
+                        Command="{Binding Path=AcceptInputAndCloseDialogCommand}"/>
+                <Button Content="Abort" Margin="4,0,0,0"
+                        Command="{Binding Path=AbortAndCloseDialogCommand}" />
             </StackPanel>
         </Grid>
     </Border>
